@@ -115,7 +115,7 @@
   prerequisites:
     Открыть корзину пользователя
   test-data: |
- https://hexlet-products-store.vercel.app/cart = "Магазин"
+    https://hexlet-products-store.vercel.app/cart = "Магазин"
   steps:
     - Заходим в корзину магазина
     - Нажимаем на панели кнопку "Магазин"
@@ -130,7 +130,7 @@
   prerequisites:
     Открыть корзину пользователя
   test-data: |
- https://hexlet-products-store.vercel.app/cart = "Продолжить покупки"
+    https://hexlet-products-store.vercel.app/cart = "Продолжить покупки"
   steps:
     - Заходим в корзину магазина
     - Нажимаем на панели кнопку "Продолжить покупки"
@@ -145,7 +145,7 @@
   prerequisites:
     Открыть сайт интернет-магазина 
   test-data: |
- https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Оформить заказ"
+    https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Оформить заказ"
   steps:
     - Заходим на сайт интернет магазина
     - Нажимаем на продукте Powder Canister кнопку "В корзину"
@@ -162,7 +162,7 @@
   prerequisites:
     Открыть сайт интернет-магазина 
   test-data: |
- https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Удалить"
+    https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Удалить"
   steps:
     - Заходим на сайт интернет магазина
     - Нажимаем на продукте Powder Canister кнопку "В корзину"
@@ -179,7 +179,7 @@
   prerequisites:
     Открыть сайт интернет-магазина 
   test-data: |
- https://hexlet-products-store.vercel.app = "Следующая" = "Предыдущая"
+    https://hexlet-products-store.vercel.app = "Следующая" = "Предыдущая"
   steps:
     - Заходим на сайт интернет магазина
     - Нажимаем кнопку "Следующая"
@@ -195,7 +195,7 @@
   prerequisites:
     Открыть сайт интернет-магазина 
   test-data: |
- https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Удалить"
+    https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Удалить"
   steps:
     - Заходим на сайт интернет магазина
     - Нажимаем на продукте Powder Canister кнопку "В корзину"
@@ -212,7 +212,7 @@
   prerequisites:
     Открыть сайт интернет-магазина 
   test-data: |
- https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Очистить корзину"
+    https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Очистить корзину"
   steps:
     - Заходим на сайт интернет магазина
     - Нажимаем на продукте Powder Canister кнопку "В корзину"
@@ -221,3 +221,16 @@
     - Проверяем результат
   expected-result: |
      После нажатия кнопки "Очистить корзину" в корзине пользователя появляется диалоговое окно подтверждения удаления
+---
+- summary: |
+    Наличие мобильной версии приложения интернет-магазина
+  requirement: |
+    Сайт должен иметь мобильную версию
+  prerequisites:
+    Открыть сайт интернет-магазина на мобильном устройстве
+  test-data: |
+    https://hexlet-products-store.vercel.app 
+  steps:
+    - Открыть сайт интернет-магазина на мобильном устройстве
+  expected-result: |
+     Сайт должен иметь мобильную версию
