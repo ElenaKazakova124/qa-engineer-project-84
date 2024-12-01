@@ -4,7 +4,7 @@
   requirement: |
     Пользователь должен иметь возможность искать товары по ключевому слову или категории
   prerequisites:
-     Открыть сайт интернет-магазина 
+     Открыть сайт https://hexlet-products-store.vercel.app/
   steps:
     - Вводим в поле "Поиск" ключевое слово "Tree"
     - Убедиться, что список товаров отфильтрован согласно поиску по ключевому слову
@@ -56,10 +56,8 @@
      Пользователь должен иметь возможность фильтровать товары по наличию
   prerequisites:
      Открыть сайт https://hexlet-products-store.vercel.app 
-  test-data: |
-     https://hexlet-products-store.vercel.app = "В наличии" = "В наличии"
   steps:
-    - Находим фильтр "В наличии"
+    - Нажать на фильтр "В наличии"
     - Устанавливаем чекбокс "В наличии"
   expected-result: |
      На странице должна произойти фильтрация по наличию продуктов в магазине
@@ -71,7 +69,7 @@
   prerequisites:
     Открыть сайт https://hexlet-products-store.vercel.app/ 
   test-data: |
-    https://hexlet-products-store.vercel.app = "Red Lipstick" = "Description"
+    https://hexlet-products-store.vercel.app/products/4
   steps:
     - Нажать на товар "Red Lipstick"
     - Найти на странице описание товара (Description)
@@ -85,7 +83,7 @@
   prerequisites:
     Открыть сайт https://hexlet-products-store.vercel.app/ 
   test-data: |
-    https://hexlet-products-store.vercel.app = "Red Lipstick" = "В корзину"
+    https://hexlet-products-store.vercel.app/products/4
   steps:
     - Перейти на страницу корзины нажав на кнопку “Корзина”
     - Убедится, что добавленный товар находится в корзине (1 штука)
@@ -123,13 +121,12 @@
   requirement: |
     Сайт должен быть доступен на различных устройствах
   prerequisites:
-    Открыть сайт https://hexlet-products-store.vercel.app на различных устройствах
-  test-data: |
-    https://hexlet-products-store.vercel.app 
+    Открыть сайт https://hexlet-products-store.vercel.app на различных устройствах 
   steps:
     - Открыть сайт на Iphone se
     - Открыть сайт на Samsung Galaxy A51/71
     - Открыть сайт на iPad Mini
+    - Открыть сайт в десктопной версии
   expected-result: |
      Сайт должен быть доступен на различных устройствах
 ---
@@ -139,13 +136,11 @@
      Пользователь должен иметь возможность сменить язык
   prerequisites:
      Открыть сайт https://hexlet-products-store.vercel.app
-  test-data: |
-     https://hexlet-products-store.vercel.app = Список "Язык/Language" = English
   steps:
     - Нажимаем на список "Язык/Language"
-    - Меняем язык 
+    - Меняем язык на противоположный выбранному
   expected-result: |
-     На странице сайта должен поменяться язык
+     На странице сайта должен поменяться язык, все элементы должны быть переведены на другой язык
 ---
 - summary: |
     Проверка работы кнопки "Магазин"
@@ -153,10 +148,7 @@
     У пользователя должна быть возможность перейти на главную страницу нажатием кнопки "Магазин"
   prerequisites:
    Открыть сайт https://hexlet-products-store.vercel.app/cart
-  test-data: |
-    https://hexlet-products-store.vercel.app/cart = "Магазин"
   steps:
-    - Заходим в корзину магазина
     - Нажимаем на панели кнопку "Магазин"
   expected-result: |
      После нажатия кнопки "Магазин" пользователь должен перейти на главную страницу интернет-магазина
@@ -167,10 +159,7 @@
     У пользователя должна быть возможность продолжить покупки после оформления заказа или перехода в корзину
   prerequisites:
     Открыть сайт https://hexlet-products-store.vercel.app/cart
-  test-data: |
-    https://hexlet-products-store.vercel.app/cart = "Продолжить покупки"
   steps:
-    - Заходим в корзину магазина
     - Нажимаем на панели кнопку "Продолжить покупки"
   expected-result: |
      После нажатия кнопки "Продолжить покупки" пользователь должен перейти на главную страницу интернет-магазина
@@ -182,7 +171,7 @@
   prerequisites:
     Открыть сайт https://hexlet-products-store.vercel.app
   test-data: |
-    https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Оформить заказ"
+    https://hexlet-products-store.vercel.app/products/3
   steps:
     - Нажимаем на продукте Powder Canister кнопку "В корзину"
     - Нажимаем на панели кнопку "Корзина"
@@ -197,7 +186,7 @@
   prerequisites:
     Открыть сайт https://hexlet-products-store.vercel.app
   test-data: |
-    https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Удалить"
+    https://hexlet-products-store.vercel.app/products/3
   steps:
     - Нажимаем на продукте Powder Canister кнопку "В корзину"
     - Нажимаем на панели кнопку "Корзина"
@@ -206,18 +195,16 @@
      После нажатия кнопки "Удалить" в корзине пользователя, товар удаляется
 ---
 - summary: |
-    Проверка работы кнопок "Следующая" и "Предыдущая"
+    Проверка работы кнопок порядковой номерации страниц
   requirement: |
     У пользователя должна быть возможность просматривать страницы с товарами магазина
   prerequisites:
     Открыть сайт https://hexlet-products-store.vercel.app 
-  test-data: |
-    https://hexlet-products-store.vercel.app = "Следующая" = "Предыдущая"
   steps:
     - Нажимаем кнопку "Следующая"
     - Нажимаем кнопку "Предыдущая"
   expected-result: |
-     После нажатия кнопок "Следующая" и "Предыдущая" страницы с продуктами меняются
+     После нажатия кнопок "Следующая" и "Предыдущая" происходит переключение страниц
 ---
 - summary: |
     Проверка наличия всплывающего окна при удалении продуктов из корзины пользователя
@@ -226,7 +213,7 @@
   prerequisites:
     Открыть сайт https://hexlet-products-store.vercel.app 
   test-data: |
-    https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Удалить"
+     https://hexlet-products-store.vercel.app/products/3
   steps:
     - Нажимаем на продукте Powder Canister кнопку "В корзину"
     - Нажимаем на панели кнопку "Корзина"
@@ -241,7 +228,7 @@
   prerequisites:
     Открыть сайт https://hexlet-products-store.vercel.app
   test-data: |
-    https://hexlet-products-store.vercel.app = Powder Canister = "В корзину" = "Корзина" = "Очистить корзину"
+    https://hexlet-products-store.vercel.app/products/3
   steps:
     - Нажимаем на продукте Powder Canister кнопку "В корзину"
     - Нажимаем на панели кнопку "Корзина"
