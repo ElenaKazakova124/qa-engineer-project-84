@@ -119,7 +119,7 @@ environment: |
     macOS
 steps-to-reproduce: |
     1. Зайти на страницу https://hexlet-products-store.vercel.app
-    2. Установить чек бокс “В наличие”
+    2. Установить чекбокс “В наличие”
 expected-result: |
     Фильтр “В наличие” должен корректно работать
 actual-result: |
