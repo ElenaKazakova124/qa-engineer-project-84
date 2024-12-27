@@ -92,7 +92,7 @@ environment: |
     Google Chrome   131.0.6778.73  (Официальная сборка) (arm64)
     macOS
 steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Нажать кнопку “Следующая”
 expected-result: |
     У пользователя должна быть возможность просмотра всех страниц интернет магазина
@@ -105,7 +105,7 @@ environment: |
     Google Chrome   131.0.6778.73  (Официальная сборка) (arm64)
     macOS
 steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Нажать список “Категория”
 expected-result: |
     Первое значение в фильтре “Категория” должно иметь название
@@ -118,7 +118,7 @@ environment: |
     Google Chrome   131.0.6778.73  (Официальная сборка) (arm64)
     macOS
 steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Установить чекбокс “В наличие”
 expected-result: |
     Фильтр “В наличие” должен корректно работать
@@ -131,7 +131,7 @@ environment: |
     Google Chrome   131.0.6778.73  (Официальная сборка) (arm64)
     macOS
 steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Уменьшить ширину страницы масштабируя ее
 expected-result: |
     Панель фильтров при масштабировании должна находится слева
@@ -144,7 +144,7 @@ environment: |
     Google Chrome   131.0.6778.73  (Официальная сборка) (arm64)
     macOS
 steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Ввести значение в фильтр “Цена”
 expected-result: |
     При введении значения в фильтр “Цена”, товары должны фильтроваться 
@@ -157,9 +157,9 @@ environment: |
     Google Chrome   131.0.6778.73  (Официальная сборка) (arm64)
     macOS
 steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Добавить в "Корзину" товар
-    3. Зайти в "Корзину" https://hexlet-products-store.vercel.app/cart
+    3. Зайти в "Корзину" https://products-store-git-v2bugfixes-hexlet-components.vercel.app//cart
     4. Нажать кнопку "Очистить корзину"
     5. Перейти на главную страницу
 expected-result: |
@@ -173,7 +173,7 @@ environment: |
     Google Chrome   131.0.6778.73  (Официальная сборка) (arm64)
     macOS
 steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Нажать на кнопку "Магазин"
 expected-result: |
     При нажатии на кнопку "Магазин" русский язык не должен меняться на английский 
@@ -186,7 +186,7 @@ environment: |
     Google Chrome   131.0.6778.73  (Официальная сборка) (arm64)
     macOS
 steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app в мобильной версии
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ в мобильной версии
     2. Нажать на кнопку "Login to intarect"
 expected-result: |
     При нажатии на кнопку "Login to intarect" в мобильной версии приложения должен осуществится переход к регистрации пользователя
@@ -194,15 +194,14 @@ actual-result: |
     При нажатии на кнопку "Login to intarect" в мобильной версии приложения ничего не происходит
 ---
 - summary: |
-    Кнопка "Поиск" не работает
+    "Поиск" не работает
 environment: |
     Google Chrome   131.0.6778.73  (Официальная сборка) (arm64)
     macOS
 steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Ввести слово для поиска
-    3. Нажать на кнопку "Поиск"
 expected-result: |
-    При нажатии на кнопку "Поиск" должен произойти поиск по введеному слову 
+    Результативный набор продуктов меняется после ввода значения в поле "Поиск" 
 actual-result: |
-    При нажатии на кнопку "Поиск" ничего не происходит
+    Результативный набор продуктов не меняется после ввода значения в поле "Поиск" 
